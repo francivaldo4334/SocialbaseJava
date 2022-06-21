@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Log"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_32">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_mail"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h2"
+        android:textStyle="bold"/>
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_8"
+        android:hint="@string/e_mail"
+        android:paddingHorizontal="@dimen/_8"/>
+    <TextView
+        android:layout_marginTop="@dimen/_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h2"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edt_password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_8"
+        android:hint="@string/password"
+        android:paddingHorizontal="@dimen/_8"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56"
+        android:layout_marginTop="@dimen/_16">
+        <Button
+            android:id="@+id/btn_log_up"
+            android:text="Log Up"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/darker_gray"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_log_In"/>
+        <Button
+            android:id="@+id/btn_log_In"
+            android:text="Log Up"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/darker_gray"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_log_up"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
